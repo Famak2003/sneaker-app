@@ -83,6 +83,7 @@ header {
 
 .link {
     /* border: 1px solid blue; */
+    color: var(--grayish-blue);
     position: relative;
     display: flex;
     align-items: center;
@@ -301,9 +302,9 @@ header {
 
 /* -------------- HERO SECTION --------------- */
 
-main {
+.sneaker-body {
     padding: 5rem 5rem 0 5rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 100vh;
     font-size: 16px;
 }
@@ -318,16 +319,24 @@ main {
 /* ------------ LEFT ------------- */
 
 .left {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     padding-right: 1rem;
+    overflow: hidden;
     flex-direction: column;
     gap: 1rem;
-    width: 50%;
+    width: fit-content;
+}
+
+.main-imgs {
+    border: 1px solid red;
+    gap: 2rem;
+    display: flex;
 }
 
 .main-img {
     border-radius: 2rem;
+    aspect-ratio: 20/14;
     height: 45rem;
     width: 100%;
     z-index: 1;
@@ -380,18 +389,18 @@ span {
     color: var(--Orange);
 }
 
-#sneakers {
+#txt {
     font-weight: 700;
     letter-spacing: .2rem;
 }
 
-h1 {
+.header-txt {
     font-weight: 790;
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 
-.right p {
+.writeup {
     /* border: 1px solid red; */
     line-height: 2.5rem;
     width: 43rem;
@@ -455,7 +464,7 @@ h2 span {
     /* border: 1px solid red; */
 }
 
-.addCart {
+.btn {
     cursor: pointer;
     border: none;
     display: flex;
@@ -486,7 +495,7 @@ h2 span {
     background-color: var(--Pale-orange);
     top: 11rem;
     border-radius: 2rem;
-    transform: translateX(-130%);
+    transform: translateX(-150%);
     padding: 2rem;
     transition: all 600ms ease-out;
     opacity: .2;
@@ -641,9 +650,9 @@ h2 span {
 .main_image_view {
     /* display: none; */
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 0;
     top: 0;
@@ -654,7 +663,7 @@ h2 span {
 }
 
 .main_img_container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 10rem;
     height: 100vh;
     width: fit-content;
@@ -677,11 +686,11 @@ h2 span {
 .next,
 .previous {
     position: absolute;
-    transform: translateX(-50%);
     background-color: var(--white);
     padding: 5px 8px 5px 8px;
     border-radius: 50%;
-    top: 50%;
+    transform: translateX(-50%);
+    top: 45%;
     z-index: 2;
 }
 

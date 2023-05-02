@@ -7,31 +7,35 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/men.css">
 
     <title>Frontend Mentor | E-commerce product page</title>
 
 </head>
 
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.svg" id="sneaker-logo" alt="Sneakers">
-                <img src="images/icon-menu.svg" class="menu" alt="menu">
+                <a href="index.html">
+                    <img src="../images/logo.svg" id="sneaker-logo" alt="Sneakers">
+                </a>
+                <img src="../images/icon-menu.svg" class="menu" alt="menu">
             </div>
             <div class="nav-link">
                 <ul class="links">
-                    <li class="menuClose"><img src="images/icon-close.svg" alt=""></li>
-                    <li class="link">Collections</li>
-                    <li class="link">Men</li>
-                    <li class="link">Women</li>
-                    <li class="link">About</li>
-                    <li class="link">Contact</li>
+                    <a class="menuClose"><img src="../images/icon-close.svg" alt=""></a>
+                    <a href="collection.html" class="link">Collections</a>
+                    <a href="men.html" class="link">Men</a>
+                    <a href="#" class="link">Women</a>
+                    <a href="#" class="link">About</a>
+                    <a href="#" class="link">Contact</a>
                 </ul>
                 <ul class="cart-avatar">
                     <li class="cart">
-                        <img class="cartImg" src="images/icon-cart.svg" alt="Cart">
+                        <img class="cartImg" src="../images/icon-cart.svg" alt="Cart">
                         <span id="cartId">0</span>
                         <!-- Cart Drop Down -->
                         <div class="cartMenu">
@@ -40,27 +44,27 @@
                             </div>
                             <div class="cartBody">
                                 <div class="cartItem">
-                                    <img id="cartItemImg" src="images/image-product-1-thumbnail.jpg" alt="">
+                                    <img id="cartItemImg" src="../images/image-product-1-thumbnail.jpg" alt="">
                                     <div class="cartQuery">
                                         <p>Fall Limited Edition Sneakers</p>
                                         <p>$125.00 x <span id="cartItemNumber">3</span> <span id="cartItemTotal">$375.00</span></p>
                                     </div>
-                                    <img id="cartDeleteImg" src="images/icon-delete.svg" alt="">
+                                    <img id="cartDeleteImg" src="../images/icon-delete.svg" alt="">
                                 </div>
                                 <button class="cartCheckout"> Checkout </button>
                             </div>
                         </div>
                     </li>
                     <li class="avatar">
-                        <img class="avatar_img" src="images/image-avatar.png" alt="User">
+                        <img class="avatar_img" src="../images/image-avatar.png" alt="User">
                         <div class="avatar_menu">
                             <div class="greetings">
                                 <p>Hi, <span id="username">Lorem</span></p>
                             </div>
                             <ul class="avatar_info">
-                                <li class="myAccount"><span><img class="user-info-img" src="images/user-icon.png" alt=""></span> My Account</li>
-                                <li class="order"><span><img class="user-info-img" src="images/order-icon.png" alt=""></span> Order</li>
-                                <li class="savedItems"><span><img class="user-info-img" src="images/dark-like-icon.png" alt=""></span> Saved Item</li>
+                                <li class="myAccount"><span><img class="user-info-img" src="../images/user-icon.png" alt=""></span> My Account</li>
+                                <li class="order"><span><img class="user-info-img" src="../images/order-icon.png" alt=""></span> Order</li>
+                                <li class="savedItems"><span><img class="user-info-img" src="../images/dark-like-icon.png" alt=""></span> Saved Item</li>
                             </ul>
                             <div class="logout">
                                 <p>LOGOUT</p>
@@ -71,38 +75,46 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="hero">
-            <div class="left">
-                <img class="main-img miv" src="images/image-product-1.jpg" alt="">
-                <div class="thumbnail">
-                    <li><img class="thumbnail1" src="images/image-product-1-thumbnail.jpg" alt=""></li>
-                    <li><img class="thumbnail2" src="images/image-product-2-thumbnail.jpg" alt=""></li>
-                    <li><img class="thumbnail3" src="images/image-product-3-thumbnail.jpg" alt=""></li>
-                    <li><img class="thumbnail4" src="images/image-product-4-thumbnail.jpg" alt=""></li>
-                </div>
+    <main class="men-body">
+        <div class="shoe-info">
+            <!-- ----------- Right ----------- -->
+            <div class="right-writeup">
+                <h1 class="header-txt shoe-name">NIKE AirFORCE 1</h1>
+                <p class="writeup w-p shoe-writeup">Engineered for the strongest Fashion on the street, the AirForce 1 Fahion Shoe delivers a powerful combination of support, impact cushioning and garanteed head turns</p>
+                <button class="btn shop-now"> Shop Now</button>
             </div>
-            <div class="right">
-                <span id="sneakers">SNEAKER COMPANY</span>
-                <h1> Fall Limited Edition Sneakers</h1>
-                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
-                <div class="price">
-                    <h2>$125.00 <span>50%</span></h2>
-                    <h3 id="discount">$250.00</h3>
+
+            <!-- -------------- Left -------------- -->
+            <div class="left-writeup">
+                <div class="left-writeup-up">
+                    <h3 class="txt semi-header"> SELECT COLOR</h3>
+                    <div class="shoe-colors">
+                        <span class="s-c black color1"></span>
+                        <span class="s-c white color2"></span>
+                        <span class="s-c gray color3"></span>
+                    </div>
                 </div>
-                <div class="increment-addCart">
-                    <div class="increment"><img class="minus" src="images/icon-minus.svg" alt="remove">
-                        <h4 id="number">0</h4> <img class="add" src="images/icon-plus.svg" alt="add"></div>
-                    <button class="addCart"><img src="images/icon-cart.svg" alt=""> Add to cart</button>
+                <div class="left-writeup-down">
+                    <h3 class="txt semi-header">SELECT SIZE</h3>
+                    <div class="shoe-size">
+                        <button class="sz">8</button>
+                        <button class="sz">8.5</button>
+                        <button class="sz">9</button>
+                        <button class="sz">9.5</button>
+                        <button class="sz">10</button>
+                        <button class="sz">11</button>
+                        <button class="sz">12</button>
+                        <button class="sz">13</button>
+                    </div>
                 </div>
+
             </div>
         </div>
-
         <!-- ------------- ACCOUNT OVERVIEW ------------ -->
         <div class="account-page">
             <div class="account-header">
                 <h4>Account Overview</h4>
-                <img class="accountPage-close-button" src="images/icon-close.svg" alt="close">
+                <img class="accountPage-close-button" src="../images/icon-close.svg" alt="close">
             </div>
             <div class="account-body">
                 <div class="account-left">
@@ -121,7 +133,7 @@
                         </div>
                         <div class="account-left-bottom-body">
                             <div class="credit-card-info">
-                                <img id="alert" src="images/icons8-high-priority-100.png" alt="">
+                                <img id="alert" src="../images/icons8-high-priority-100.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -130,7 +142,7 @@
                     <div class="account-right-top">
                         <div class="account-right-top-header">
                             <h3>ADDRESS BOOK</h3>
-                            <img id="edit-pen" src="images/dark-like-icon.png" alt="">
+                            <img id="edit-pen" src="../images/dark-like-icon.png" alt="">
                         </div>
                         <div class="account-right-top-body">
                             <h4>Your default shipping address:</h4>
@@ -153,20 +165,22 @@
                 </div>
             </div>
         </div>
-        <!-- --------- Main Picture View ---------------- -->
-        <div class="main_image_view">
-            <div class="main_img_container">
-                <img src="images/icon-close.svg" alt="Cancel button" class="close_main_img">
-                <span class="enlarged_main_image">
-                    <img src="images/icon-previous.svg" alt="" class="previous">
-                    <img src="images/image-product-2.jpg" alt="" class="emi">
-                    <img src="images/icon-next.svg" alt="" class="next">
-                </span>
+        <footer>
+            <div class="socials">
+                <a href=""><img src="../images/Linkedin.jpg" alt=""></a>
+                <a href=""><img src="../images/Instagram.jpg" alt=""></a>
+                <a href=""><img src="../images/Facebook.jpg" alt=""></a>
+                <a href=""><img src="../images/Pinterest.jpg" alt=""></a>
+                <a href=""><img src="../images/Whatsapp.jpg" alt=""></a>
+                <a href=""><img src="../images/Twitter.jpg" alt=""></a>
+                <a href=""><img src="../images/Youtube.jpg" alt=""></a>
             </div>
-            <div class="background"> </div>
-        </div>
+            <p>
+                Deveoped By Famak
+            </p>
+        </footer>
     </main>
-    <script src="app.js"></script>
-</body>
+    <script src="../scripts/Navigation.js"></script>
+    <script src="../scripts/men.js"></script>
 
-</html>
+</body>
